@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PIYUSH CHAUDHARY</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="chatbot.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -133,6 +134,15 @@
         </a>
       </p>
     </section>
+    section id="weather-section" class="weather-section">
+<h2>Live Weather Checker</h2>
+<p>Enter a city to check its current weather.</p>
+<div class="weather-controls">
+<input id="cityInput" type="text" placeholder="Enter city (e.g., Jaipur)" />
+<button id="weatherButton" type="button">Get Weather</button>
+</div>
+<p id="weatherResult" aria-live="polite">Enter a city and click Get Weather.</p>
+</section>
   </main>
 
   <footer class="site-footer">
@@ -141,5 +151,21 @@
 
   <button id="themeToggle">Switch to Dark Mode</button>
   <script src="script.js"></script>
+  <section id="portfolio-chatbot" class="chatbot-section">
+    <h2>Ask My Portfolio Chatbot</h2>
+    <p>Ask a question and get a response from the AI.</p>
+    <div id="chatMessages" class="chat-messages" aria-live="polite">
+    <p class="bot-message">Hello! Ask me something about this portfolio.</p>
+    </div>
+    <form id="chatForm" class="chat-form">
+    <input id="chatInput" type="text" placeholder="Type your question" required>
+    <button id="chatSend" type="submit">Send</button>
+    </form>
+    <p id="chatStatus" aria-live="polite"></p>
+    </section>
+    <script src="config.js"></script>
+<script src="chatbot.js"></script>
 </body>
+
 </html>
+
