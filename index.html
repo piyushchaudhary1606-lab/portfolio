@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PIYUSH CHAUDHARY</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="logo">PIYUSH CHAUDHARY</p>
+      <nav aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button type="button" id="theme-toggle" aria-pressed="false">
+        Dark mode
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="page-heading">
+      <p class="eyebrow">Personal profile</p>
+      <h1 id="page-heading">PIYUSH CHAUDHARY</h1>
+      <p class="tagline">Frontend Development</p>
+      <p class="location">Based in KOTA, country</p>
+    </section>
+
+    <section id="about" class="panel" aria-labelledby="about-heading">
+      <h2 id="about-heading">About</h2>
+      <p>
+        I am a student of KOTA and I am interested in web development . Introduce who you are, what you work on,
+        and what you care about. Replace this paragraph with a few sentences
+        about your background and interests.
+      </p>
+      <p>
+        I am a student of KOTA and I am interested in web development and I am a good developer and I am a good student . Mention education, current focus, or a
+        notable achievement so visitors have a clearer picture of your work.
+      </p>
+    </section>
+
+    <section id="skills" class="panel" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
+      <ul class="skills-list">
+        <li>Video Shoot</li>
+        <li>Photo Shoot</li>
+        <li>Video Editing</li>
+        <li>Photo Editing</li>
+        <li>Web Development</li>
+        <li>Andriod Development</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="panel" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+
+      <div class="project-filters" role="search" aria-label="Filter projects">
+        <label class="project-search-label" for="project-search">
+          Search by name or technology
+          <input
+            type="search"
+            id="project-search"
+            name="project-search"
+            placeholder="e.g. Python, Java, C++"
+            autocomplete="off"
+          >
+        </label>
+
+        <fieldset class="tech-filters">
+          <legend>Filter by technology</legend>
+          <div class="tech-filter-buttons" role="group" aria-label="Technology filters">
+            <button type="button" class="tech-filter is-active" data-tech="all" aria-pressed="true">All</button>
+            <button type="button" class="tech-filter" data-tech="python" aria-pressed="false">Python</button>
+            <button type="button" class="tech-filter" data-tech="java" aria-pressed="false">Java</button>
+            <button type="button" class="tech-filter" data-tech="c++" aria-pressed="false">C++</button>
+          </div>
+        </fieldset>
+      </div>
+
+      <p id="project-filter-status" class="project-filter-status" aria-live="polite"></p>
+
+      <ul class="projects-list" id="projects-list">
+        <li class="project-item" data-name="python project" data-tech="python">
+          <h3>
+            <a href="https://github.com/piyushchaudhary1606-lab/Python-basic-25BCON0215.git" target="_blank" rel="noopener noreferrer">
+              Python project
+            </a>
+          </h3>
+          <p>This is a python project for college project .</p>
+          <p class="project-tech"><span class="visually-hidden">Technologies: </span>Python</p>
+        </li>
+        <li class="project-item" data-name="java project" data-tech="java">
+          <h3>
+            <a href="https://github.com/piyushchaudhary1606-lab/session8.git" target="_blank" rel="noopener noreferrer">
+              Java project
+            </a>
+          </h3>
+          <p>This is a java project for college project .</p>
+          <p class="project-tech"><span class="visually-hidden">Technologies: </span>Java</p>
+        </li>
+        <li class="project-item" data-name="c++ project" data-tech="c++">
+          <h3>
+            <a href="https://PLACEHOLDER-project-three.example.com" target="_blank" rel="noopener noreferrer">
+              C++ project
+            </a>
+          </h3>
+          <p>This is a c++ project for college project .</p>
+          <p class="project-tech"><span class="visually-hidden">Technologies: </span>C++</p>
+        </li>
+      </ul>
+
+      <p id="projects-empty" class="projects-empty" hidden>No projects match your search.</p>
+    </section>
+
+    <section id="contact" class="panel" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <p>
+        Email:
+        <a href="mailto:PLACEHOLDER.email@example.com">piyushchaudhary1606@gmail.com</a>
+      </p>
+      <p>
+        Profile:
+        <a href="https://github.com/piyushchaudhary1606-lab-portfolio" target="_blank" rel="noopener noreferrer">
+          PLACEHOLDER public profile URL
+        </a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> PIYUSH CHAUDHARY. All rights reserved.</p>
+  </footer>
+
+  <button id="themeToggle">Switch to Dark Mode</button>
+  <script src="script.js"></script>
+</body>
+</html>
